@@ -1,0 +1,132 @@
+Claudinho
+#Mach
+0.0    
+#IYsym   IZsym   Zsym
+ 0       0       0.0
+#Sref        Cref          Bref
+0.6240         0.26         2.4
+#Xref          Yref        Zref
+0.3641           0.0         0.21
+
+
+#====================================================================
+SURFACE
+Asa
+15   1    40  0  ! Nchord   Cspace       Nspan          Sspace
+#
+YDUPLICATE
+0.0
+ANGLE
+     5.00000    
+
+TRANSLATE
+    0.24  0.0  0.3040 
+#--------------------------------------------------------------
+SECTION
+#Xle    Yle    Zle     Chord       Ainc  Nspanwise  Sspace
+0.0        0.0     0.0     0.26   0.000 
+AFILE
+s1223.dat
+CDCL
+0.4 0.047 1.187 0.0146 2.32 0.03
+
+#--------------------------------------------------------------
+SECTION
+#Xle    Yle    Zle     Chord       Ainc  Nspanwise  Sspace
+0.0     0.72   0.0     0.26    0.000
+
+AFILE
+s1223.dat
+CDCL
+0.4 0.047 1.187 0.0146 2.32 0.03
+
+CONTROL
+#name        gain    Xhinge        XYZhvec   SgnDup
+aileron        1        0.75        0 1 0    -1
+#-------------------------------------------------
+SECTION
+#Xle    Yle   Zle     Chord   Ainc      Nspanwise      Sspace
+0.0     1.2   0.0     0.26   0.000
+AFILE
+s1223.dat
+CDCL
+0.4 0.047 1.187 0.0146 2.32 0.03
+CONTROL
+#name        gain    Xhinge        XYZhvec   SgnDup
+aileron      1        0.75       0 1 0     -1
+
+
+#====================================================================
+SURFACE
+Empenagem Horizontal
+#Nchordwise  Cspace   Nspanwise   Sspace
+ 6           1.0      6           1
+YDUPLICATE
+0.0
+TRANSLATE
+1.2266     0.0     0.3665
+#-------------------------------------------------------------------
+SECTION
+#Xle    Yle    Zle             Chord       Ainc      Nspanwise      Sspace
+0.0     0.0    0.0             0.15        0.0        0              0
+AFILE
+s8035.dat
+CDCL
+-0.3 0.008 0.25 0.008 1.13 0.025
+CONTROL
+#name       gain    Xhinge            XYZhvec        SgnDup
+elevator    1.0     0.0          0.0 1.0 0.0    1
+#------------------------------------------------------------------
+SECTION
+#Xle    Yle    Zle             Chord       Ainc      Nspanwise      Sspace
+0.0    0.2705   0.0             0.15       0.0        0              0
+AFILE 
+s8035.dat
+CDCL
+-0.3 0.008 0.25 0.008 1.13 0.025
+CONTROL
+#name        gain   Xhinge       XYZhvec        SgnDup
+elevator    1.0     0.0          0.0 1.0 0.0     1
+
+#====================================================================
+SURFACE
+Empenagem Vertical
+#Nchordwise  Cspace    Nspanwise  Sspace
+6            1.0       5          -1.0
+
+TRANSLATE
+1.1566     0.0     0.3665
+
+#-------------------------------------------------------------
+SECTION
+#Xle    Yle    Zle     Chord       Ainc  Nspanwise  Sspace
+0.0     0.0     0.0     0.2357     0.    0          0
+AFILE
+s8035.dat
+CDCL
+-0.3 0.008 0.25 0.008 1.13 0.025
+#-------------------------------------------------------------
+SECTION
+#Xle        Yle     Zle         Chord         Ainc  Nspanwise  Sspace
+0.0043    0.     0.0241         0.2314      0.    0          0
+AFILE
+s8035.dat
+CDCL
+-0.3 0.008 0.25 0.008 1.13 0.025
+#Cname   Cgain  Xhinge    HingeVec     SgnDup
+CONTROL
+rudder   1.0    0.69014693     0.0 0.0 1.0  1.0
+
+#-------------------------------------------------------------
+SECTION
+#Xle    Yle        Zle         Chord       Ainc  Nspanwise  Sspace
+0.0545   0.     0.3041        0.1812        0.    0          0
+AFILE
+s8035.dat
+CDCL
+-0.3 0.008 0.25 0.008 1.13 0.025
+#Cname   Cgain  Xhinge  HingeVec     SgnDup
+CONTROL
+rudder   1.0    0.604304     0.0 0.0 1.0  1.0
+
+

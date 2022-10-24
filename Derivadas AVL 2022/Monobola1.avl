@@ -1,0 +1,173 @@
+Monobola1
+#Mach
+0.0    
+#IYsym   IZsym   Zsym
+ 0       0       0.0
+#Sref        Cref          Bref (Asa)
+0.4923         0.4827         1.07
+#Xref          Yref        Zref (CG)
+0.0798           0.0         0.25
+
+
+#===============================================================================================================
+SURFACE
+Asa Inferior
+15   1    40  0  ! Nchord   Cspace       Nspan          Sspace
+#
+YDUPLICATE
+0.0
+ANGLE
+     -2.00000    
+
+TRANSLATE
+    0.287  0.131  0.248 
+#--------------------------------------------------------------
+SECTION
+#Xle    Yle    Zle     Chord       Ainc  Nspanwise  Sspace
+0.0        0.0     0.0     0.5   0.000 
+AFILE
+USF22_ASA1_OFICIAL.dat
+
+CONTROL
+#name        gain    Xhinge        XYZhvec   SgnDup
+aileron        1        0.6        0 1 0    -1
+#--------------------------------------------------------------
+SECTION
+#Xle    Yle    Zle     Chord       Ainc  Nspanwise  Sspace
+0.0     0.158   0.0     0.5    0.000
+
+AFILE
+USF22_ASA1_OFICIAL.dat
+
+
+CONTROL
+#name        gain    Xhinge        XYZhvec   SgnDup
+aileron        1        0.6        0 1 0    -1
+#-------------------------------------------------
+SECTION
+#Xle    Yle   Zle     Chord   Ainc      Nspanwise      Sspace
+0.04268     0.41   0.0     0.33   0.000
+AFILE
+USF22_ASA1_OFICIAL.dat
+
+CONTROL
+#name        gain    Xhinge        XYZhvec   SgnDup
+aileron      1        0.7757       0 1 0     -1
+
+#===============================================================================================================
+SURFACE
+Asa Superior
+15   1    40  0  ! Nchord   Cspace       Nspan          Sspace
+#
+YDUPLICATE
+0.0
+ANGLE
+     2.00000    
+
+TRANSLATE
+    0.287  0.0  0.848 
+#--------------------------------------------------------------
+SECTION
+#Xle    Yle    Zle     Chord       Ainc  Nspanwise  Sspace
+0.0        0.0     0.0     0.5   0.000 
+AFILE
+USF22_ASA2_OFICIAL.dat
+
+#--------------------------------------------------------------
+SECTION
+#Xle    Yle    Zle     Chord       Ainc  Nspanwise  Sspace
+0.0     0.131   0.0     0.5    0.000
+
+AFILE
+USF22_ASA2_OFICIAL.dat
+
+
+CONTROL
+#name        gain    Xhinge        XYZhvec   SgnDup
+aileron        1        0.6        0 1 0    -1
+#-------------------------------------------------
+SECTION
+#Xle    Yle   Zle     Chord   Ainc      Nspanwise      Sspace
+0.0     0.427   0.0     0.5   0.000
+AFILE
+USF22_ASA2_OFICIAL.dat
+
+CONTROL
+#name        gain    Xhinge        XYZhvec   SgnDup
+aileron      1        0.6       0 1 0     -1
+
+#-------------------------------------------------
+SECTION
+#Xle    Yle   Zle     Chord   Ainc      Nspanwise      Sspace
+0.076     0.535   0.0     0.255   0.000
+AFILE
+USF22_ASA2_OFICIAL.dat
+
+CONTROL
+#name        gain    Xhinge        XYZhvec   SgnDup
+aileron      1        0.8862       0 1 0     -1
+
+#===============================================================================================================
+
+SURFACE
+Empenagem Horizontal
+#Nchordwise  Cspace   Nspanwise   Sspace
+ 6           1.0      6           1
+YDUPLICATE
+0.0
+ANGLE
+-0.200
+TRANSLATE
+1.538     0.0     0.585
+#-------------------------------------------------------------------
+SECTION
+#Xle    Yle    Zle             Chord       Ainc      Nspanwise      Sspace
+0.0     0.0    0.0             0.242        0.0        0              0
+AFILE
+USF22_EH_OFICIAL.dat
+
+CONTROL
+#name       gain    Xhinge            XYZhvec        SgnDup
+elevator    1.0     0.8          0.0 1.0 0.0    1
+#------------------------------------------------------------------
+SECTION
+#Xle    Yle    Zle             Chord       Ainc      Nspanwise      Sspace
+0.0    0.35   0.0             0.242       0.0        0              0
+AFILE 
+USF22_EH_OFICIAL.dat
+
+CONTROL
+#name        gain   Xhinge       XYZhvec        SgnDup
+elevator    1.0     0.8          0.0 1.0 0.0     1
+
+#====================================================================
+SURFACE
+Empenagem Vertical
+#Nchordwise  Cspace    Nspanwise  Sspace
+6            1.0       5          -1.0
+
+TRANSLATE
+1.445     0.0     0.622
+
+#-------------------------------------------------------------
+SECTION
+#Xle    Yle    Zle     Chord       Ainc  Nspanwise  Sspace
+0.0     0.0     0.0     0.3     0.    0          0
+AFILE
+fx76100.dat
+CONTROL
+rudder   1.0    0.67     0.0 0.0 1.0  1.0
+
+
+#-------------------------------------------------------------
+SECTION
+#Xle    Yle        Zle         Chord       Ainc  Nspanwise  Sspace
+0.1   0.0     0.25        0.2        0.    0          0
+AFILE
+fx76100.dat
+
+#Cname   Cgain  Xhinge  HingeVec     SgnDup
+CONTROL
+rudder   1.0    0.5     0.0 0.0 1.0  1.0
+
+
